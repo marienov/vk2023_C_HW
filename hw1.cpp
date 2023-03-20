@@ -114,20 +114,25 @@ int main(int argc, char* argv[]) {
 		}
 		else {
 			ifstream fin(argv[i]);
-			string columns;
-			getline(fin, columns);
-			if (columns == bas_col){
-				fbas.open(argv[i]);
+			if (fin.is_open()) {
+				string columns;
+				getline(fin, columns);
+				if (columns == bas_col) 
+					fbas.open(argv[i]);
+				if (columns == title_col)
+					faka.open(argv[i]);
+				if (columns == rat_col)
+					frat.open(argv[i]);
+				fin.close();
 			}
-			if (columns == title_col)
-				faka.open(argv[i]);
-			if (columns == rat_col)
-				frat.open(argv[i]);
 		}
 	}
 
 	set<Series> chosen;
 	choose_series(fbas, frat, faka, minutes, &chosen);
 	print_set(chosen);
+	frat.close();
+	fbas.close();
+	faka.close();
 }
 
