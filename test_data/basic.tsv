@@ -1,0 +1,9 @@
+tconst	titleType	primaryTitle	originalTitle	isAdult	startYear	endYear	runtimeMinutes	genres
+tt0000001	tvSeries	Carmencita	Carmencita	0	1894	\N	20	Documentary,Short
+tt0000002	short	Le clown et ses chiens	Le clown et ses chiens	0	1892	\N	45	Animation,Short
+tt0000003	tvSeries	Pauvre Pierrot	Pauvre Pierrot	0	1892	\N	40	Animation,Comedy,Romance
+tt0000004	tvSeries	Un bon bock	Un bon bock	0	1892	\N	13	Animation,Short
+tt0269106	tvSeries	The Life of Confucius	The Life of Confucius	0	1998	\N	13	Animation
+tt0269201	tvSeries	Estamos unidos	Estamos unidos	0	2000	2000	30	Comedy
+tt0269687	tvSeries	Pap? mendigo	Pap? mendigo	0	2001	\N	60	Drama,Romance
+tt0269752	tvSeries	Quiero ser estrella	Quiero ser estrella	0	1997	1999	60	Music
