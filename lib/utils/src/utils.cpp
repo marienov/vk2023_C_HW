@@ -49,8 +49,10 @@ double find_rating(std::ifstream& file_rat, std::string& s_id, std::string& last
             return s_rat;
         }
         if (rat_attr[0] == s_id) {
+            if (std::stoi(rat_attr[2])>=1000){
                 s_rat = std::stod(rat_attr[1]);
             }
+        }
     }
     while ( getline(file_rat, line_r)) {
         last_line = line_r;
@@ -60,7 +62,9 @@ double find_rating(std::ifstream& file_rat, std::string& s_id, std::string& last
             break;
         }
         if (rat_attr[0] == s_id) {
-            s_rat = std::stod(rat_attr[1]);
+            if (std::stoi(rat_attr[2])>=1000){
+                s_rat = std::stod(rat_attr[1]);
+	    }
         }
         rat_attr.clear();
         }
